@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+.filterregion {
+  margin-top: 2rem;
+
+  .filterbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5vw;
+    background-color: $white;
+    border-style: none;
+    box-shadow: 1px 1px 5px #ccc;
+    width: 10rem;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 20px;
+    outline: none;
+
+    .font-awesome {
+      color: grey;
+    }
+  }
+
+  .displayfilter {
+    display: grid;
+    margin-top: 5px;
+    width: 8rem;
+    border-radius: 5px;
+    height: auto;
+    margin-left: 5vw;
+    box-shadow: 1px 1px 5px #ccc;
+    background-color: $white;
+    line-height: 30px;
+    padding: 10px 20px;
+    font-size: $detail-page-font;
+    position: relative;
+    z-index: 5;
+    
+    .filterlink {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "./variables.scss";
+
+.loading {
+  text-align: center;
+}
+
+.cardgrid {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  grid-gap: 180px 40px;
+  margin-bottom: 10%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  .countrydiv{
+    margin-top: -140px;
+    display: grid;
+    justify-items: center;
+    width: 15rem;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+
+    .link {
+      text-decoration: none;
+      color: $light-mode-text;
+    }
+  
+    .imagediv {
+      display: grid;
+      justify-items: center;
+    }
+  
+    .cardimage {
+      width: 100%;
+      height: auto;
+      border-radius: 5px 5px 0 0;
+    }
+  
+    .description {
+      width: 90%;
+      height: 180px;
+      margin-left: 22px;
+
+      .descriptionheader {
+        font-size: 16px;
+        margin-top: 30px;
+      }
+
+      .countryprops {
+        font-weight: 100;
+        font-size: 14px;
+
+        .descriptiontexts {
+          margin-top: 0;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  
+  }
+}

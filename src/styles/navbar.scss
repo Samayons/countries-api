@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import "./variables.scss";
+
+body {
+  font-family: $family-fonts;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $light-mode-background;
+}
+
+.nav {
+  background-color: $white;
+  margin: 0;
+  font-size: $homepage-items-font;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: $box-shadow;
+  height: 80px;
+
+  .navdiv {
+    display: flex;
+    align-items: center;
+  }
+
+  .fontAwesome {
+    margin-right: 5px;
+  }
+
+  .navheader, .moontext {
+    color: $light-mode-text;
+  }
+
+  .moontext {
+    font-weight: 300;
+  }
+}
+
+.nav-dark {
+  background-color: hsl(209, 23%, 22%);
+  margin: 0;
+  font-size: $homepage-items-font;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  height: 80px;
+
+  .navdiv {
+    display: flex;
+    align-items: center;
+  }
+
+  .fontAwesome {
+    margin-right: 5px;
+    color: $white;
+  }
+
+  .navheader, .moontext {
+    color: $white;
+  }
+
+  .moontext {
+    font-weight: 300;
+  }
+}

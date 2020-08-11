@@ -1,0 +1,62 @@
+@import "./variables.scss";
+
+.details-div {
+  display: grid;
+  margin: 0 8%;
+
+  .details-back-button {
+    width: 5rem;
+    height: 30px;
+    background-color: $white;
+    outline: none;
+    border: none;
+    box-shadow: $box-shadow;
+    padding-left: 30px;
+    margin-top: 3rem;
+    border-radius: 2px;
+    background-size: 20%;
+
+    .font-awesome {
+      position: relative;
+      left: -20px;
+    }
+  }
+
+  .detail-container {
+    display: grid;
+    grid-column-gap: 3vw;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    .details-image {
+      max-width: 100%;
+      height: auto;
+      margin-top: 3rem;
+    }
+
+    .details-description, .details-more-info {
+      line-height: 8px;
+      font-weight: 300;
+    }
+
+    .details-info-div {
+      margin: 60px 0;
+    }
+
+    .border-countries-div {
+      margin: -15px 0 50px 0;
+
+      .border-countries {
+        background-color: $white;
+        border: none;
+        box-shadow: $box-shadow;
+        position: relative;
+        top: -10px;
+        margin: 0 10px 10px 0;
+        width: 5rem;
+        height: 30px;
+        border-radius: 2px;
+        outline: none;
+      }
+    }
+  }
+}
